@@ -1,9 +1,13 @@
 # CO project(semester 2) to design a custom assembler 
 #group members: Aditya, Rishav,Samuel
+
+
 import sys
 assemblyfile=sys.stdin.read().splitlines()
-#with open("read.txt") as r:
- #   assemblyfile=r.read().splitlines()
+
+# custom input 
+# with open("test1.txt") as r:
+#    assemblyfile=r.read().splitlines()
 
 
 
@@ -61,11 +65,8 @@ for line in assemblyfile:   # will store add of labels
     if y[0][-1]==":":
         Label_add[y[0]]=c
 
-<<<<<<< HEAD:CO_M21_Assignment-4be702828e30f91fab146f7672399e9419674bb7/Simple-Assembler/co_assignment_assembler.py
 
 c=0
-=======
->>>>>>> f7be994e5232368ad980b622f0b0b0f64c844e53:CO_M21_Assignment-4be702828e30f91fab146f7672399e9419674bb7/Simple-Assembler/COAssignment.py
 if add_count>256:
     print("Lines in code exceed 256 limit.")
 
@@ -79,6 +80,7 @@ else:
         
         if len(x)>1 and x[0] in Label_add and x[1] in Instruction:
             x.pop(0)
+       
 
         if x[0]=="var":
             continue    
@@ -168,19 +170,12 @@ else:
         elif len(x)>1 and x[1]!="hlt":
             print("Missing hlt instruction")
     #hlt not used error
-<<<<<<< HEAD:CO_M21_Assignment-4be702828e30f91fab146f7672399e9419674bb7/Simple-Assembler/co_assignment_assembler.py
     #if("hlt" not in assemblyfile):
      #   flag=1
       #  print("Missing hlt instruction") 
     
                 
     
-=======
-    if("hlt" not in assemblyfile):
-        flag=1
-        print("Missing hlt instruction") 
-     
->>>>>>> f7be994e5232368ad980b622f0b0b0f64c844e53:CO_M21_Assignment-4be702828e30f91fab146f7672399e9419674bb7/Simple-Assembler/COAssignment.py
     #code to print machine code if no error
     for line in assemblyfile:
         x=list(line.split())
@@ -248,3 +243,15 @@ else:
                     # type F instruction
                     if  x[0]=="hlt":
                         print(Instruction[x[0]][0]+"00000000000")
+                
+
+
+
+    
+
+    
+
+     
+
+
+    
