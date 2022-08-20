@@ -13,3 +13,4 @@ Starter repository for Computer Organization, Monsoon 2021 semester, assignment 
 	1. `--verbose`: Prints verbose output
 	2. `--no-asm`: Does not evaluate the assembler
 	3. `--no-sim`: Does not evaluate the simulator
+-----------------------------------------------------------------------END-------------------------------------------------------
